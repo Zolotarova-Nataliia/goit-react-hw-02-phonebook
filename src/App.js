@@ -60,7 +60,7 @@ class App extends Component {
         ></Filter>
         <Contacts
           contacts={findedContacts}
-          onClick={this.deleteContact}
+          deleteContact={this.deleteContact}
         ></Contacts>
       </div>
     );

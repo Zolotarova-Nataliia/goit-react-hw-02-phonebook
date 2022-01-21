@@ -11,7 +11,7 @@ const Contacts = ({ contacts, deleteContact }) => {
             <FormListItem key={contact.id}>
               <FormText>{contact.name}:</FormText>
               <FormText>{contact.number}</FormText>
-              <FormBtn id={contact.id} onClick={deleteContact}>
+              <FormBtn onClick={() => deleteContact(contact.id)}>
                 Delete
               </FormBtn>
             </FormListItem>
