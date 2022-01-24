@@ -51,17 +51,14 @@ class App extends Component {
     return (
       <div className="App">
         <FormTitle>Phonebook</FormTitle>
-        <Form onSubmit={this.formSubmitHandler}></Form>
+        <Form onSubmit={this.formSubmitHandler} />
 
         <FormSubtitle>Contacts</FormSubtitle>
-        <Filter
-          value={this.state.filter}
-          onChange={this.filterHandler}
-        ></Filter>
+        <Filter value={this.state.filter} onChange={this.filterHandler} />
         <Contacts
           contacts={findedContacts}
           deleteContact={this.deleteContact}
-        ></Contacts>
+        />
       </div>
     );
   }
